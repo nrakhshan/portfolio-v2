@@ -1,0 +1,120 @@
+@import 'material-symbols';
+@import "tailwindcss";
+
+@theme {
+  /* Colours */
+  --color-base: #FDFCFC;
+  --color-gray-accent: #F2F2F2;
+  --color-gray-accent-2: #d9d9d9;
+  --color-gray-sub: #808080;
+  --subtle-gradient: radial-gradient(circle, rgba(181,181,181,1) 0%, rgba(51,51,51,1) 100%);
+
+  /* Fonts */
+  --font-lexend: Lexend, sans-serif;
+  --font-outfit: Outfit, sans-serif;
+  --font-urbanist: Urbanist, sans-serif;
+  --font-kalnia: Kalnia, sans-serif;
+}
+
+@layer utilities {
+  .gradient {
+    background-color: black;
+    background-image: radial-gradient(circle at 5% 10%, rgba(181,181,181,0.8) 0%, rgba(51,51,51,0.8) 65%);
+    background-size: 100%;
+    background-position: 1rem 2 rem;
+    background-repeat: repeat;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+
+  .gradient-2 {
+    background-color: black;
+    background-image: radial-gradient(circle at 25% 5%, rgba(181,181,181,0.8) 0%, rgba(51,51,51,0.8) 45%);
+    background-size: 100%;
+    background-position: 1rem 2 rem;
+    background-repeat: repeat;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+
+  .fade-img {
+    mask-image: linear-gradient(black 60%, transparent 100%);
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
+
+  .material-symbols-rounded {
+    font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 200, 'opsz' 48;
+  }
+
+  .custom-cursor {
+    cursor: url('../public/icons/cursor.svg') 12 12, auto;
+  }
+
+  .custom-cursor a, button, .click-button {
+    cursor: url('../public/icons/cursor2.svg') 15 15, pointer;
+  }
+
+
+  .tag *::before {
+    content: "# ";
+  }
+
+  .tag * {
+    background-color: #F2F2F2;
+    display: inline-block;
+    border-radius: 50em;
+    padding: 0.5em 1em;
+    margin: 0.25em 0.25em;;
+  }
+  
+  .left-out {
+    animation: slideLeft 1s ease;
+
+  }
+
+  .left-in {
+    animation: slideRight 5s ease;
+  }
+}
+
+
+@keyframes slideLeft {
+  0% {
+    opacity: 1;
+    display: flex;
+  }
+  99% {
+    opacity: 0;
+    display: flex;
+  }
+  100% {
+    opacity: 0;
+    display: hidden;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
