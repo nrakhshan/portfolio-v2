@@ -7,6 +7,8 @@
   --color-gray-accent: #F2F2F2;
   --color-gray-accent-2: #d9d9d9;
   --color-gray-sub: #808080;
+  /* --color-menu: rgba(253, 252, 252, 0.5); */
+  --color-menu: radial-gradient(circle, rgba(181,181,181,1) 0%, rgba(51,51,51,1) 100%);
   --subtle-gradient: radial-gradient(circle, rgba(181,181,181,1) 0%, rgba(51,51,51,1) 100%);
 
   /* Fonts */
@@ -70,6 +72,23 @@
     cursor: url('../public/icons/cursor2.svg') 15 15, pointer;
   }
 
+  /* .blur-feather {
+    -webkit-mask-image: radial-gradient(ellipse at center, black 70%, transparent 100%);
+    mask-image: radial-gradient(ellipse at center, black 70%, transparent 100%);
+    background-image: radial-gradient(circle, red 20%, transparent 100%);
+  }   */
+
+  .blur-feather {
+    -webkit-mask-image: 
+      linear-gradient(to right, transparent, black 25%, black 70%, transparent),
+      linear-gradient(to bottom, transparent, black 25%, black 90%, transparent);
+    -webkit-mask-composite: intersect;
+    mask-image: 
+      linear-gradient(to right, transparent, black 25%, black 70%, transparent),
+      linear-gradient(to bottom, transparent, black 25%, black 90%, transparent);
+    mask-composite: intersect;
+  }
+  
 
   .tag *::before {
     content: "# ";
