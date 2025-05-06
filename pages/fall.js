@@ -54,7 +54,7 @@ export default function Beacon() {
           
           p2={<div><br/><p>In this partner project, we collaborated on the game logic, but worked separately on the other 
             components and used GitHub to share our files. My main responsibility was outputting all the 
-            components to the VGA. Using C, it was fairly simple to write different functions to "print" 
+            components to the VGA. Using C, it was fairly simple to write different functions to &apos;print&apos; 
             different sprites to the screen, and randomize positions and colours using function arguments. 
             What I struggled with was implementing hardware-enabled double buffering, to ensure our game 
             looked smooth and had no tearing. In my initial implementation, some components disappearing 

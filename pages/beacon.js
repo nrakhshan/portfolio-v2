@@ -41,16 +41,16 @@ export default function Beacon() {
           <Tags tags={tags}/>
           
           <Body
-          parent="beacon"
+          parent="beacon" 
 
           p1={<div><p>Bidesh Beacon is a map application designed to assist South Asian newcomers 
             with finding resources and utilities to help them settle in a new city. 
-            Bidesh is the word for 'foreign country' in many South Asian languages, and Beacon 
+            Bidesh is the word for &apos;foreign country&apos; in many South Asian languages, and Beacon 
             is an allusion to one of the integral features of the software - tailored location 
             markers that newcomers may find useful. For example, the locations of bilingual health 
             services or South Asian grocery stores are among the different types of locations we 
             curated for our users. The use of a non-English word also alludes to another important feature, 
-            which is the bilingual UI support. Other features include switching between different cities' 
+            which is the bilingual UI support. Other features include switching between different cities&apos; 
             maps, finding a route between two locations, and switching the UI to night mode.</p><br/></div>}
 
           photos={photos}
@@ -58,7 +58,7 @@ export default function Beacon() {
           p2={<div><br/><p>The application was written in C++, using the GTK library for the user interface, 
           and the OpenStreetMap database for the map data. To retrieve the data more efficiently, 
           we developed a higher-level API which pre-loaded and categorized information tailored to 
-          the map’s features. For the navigation, we used Djikstra's Algorithm to find shortest paths 
+          the map&apos;s features. For the navigation, we used Djikstra&apos;s Algorithm to find shortest paths 
           between two points, taking into account speed limits.</p>
 
           <br/><br/><p>As a team of South Asian developers who were once newcomers ourselves, we understood 

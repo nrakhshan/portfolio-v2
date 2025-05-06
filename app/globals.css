@@ -79,14 +79,18 @@
   }   */
 
   .blur-feather {
-    -webkit-mask-image: 
-      linear-gradient(to right, transparent, black 25%, black 70%, transparent),
-      linear-gradient(to bottom, transparent, black 25%, black 90%, transparent);
-    -webkit-mask-composite: intersect;
     mask-image: 
       linear-gradient(to right, transparent, black 25%, black 70%, transparent),
       linear-gradient(to bottom, transparent, black 25%, black 90%, transparent);
     mask-composite: intersect;
+    -webkit-mask-image: 
+      linear-gradient(to right, transparent, black 25%, black 70%, transparent),
+      linear-gradient(to bottom, transparent, black 25%, black 90%, transparent);
+    -webkit-mask-composite: intersect;
+    -moz-mask-image: 
+      linear-gradient(to right, transparent, black 25%, black 70%, transparent),
+      linear-gradient(to bottom, transparent, black 25%, black 90%, transparent);
+    -moz-mask-composite: intersect;
   }
   
 

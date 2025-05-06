@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg width="30px" height="30px" viewBox="255 255 525 525" xmlns="http://www.w3.org/2000/svg"><title>circle</title><circle cx="512" cy="512" r="256" fill="#FFFFFF" opacity="0.1" fill-rule="evenodd"/></svg>
+<svg width="30px" height="30px" viewBox="255 255 525 525" xmlns="http://www.w3.org/2000/svg"><title>circle</title><circle cx="512" cy="512" r="256" fill="#000" opacity="0.1" fill-rule="evenodd"/></svg>

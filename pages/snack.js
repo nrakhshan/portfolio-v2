@@ -61,8 +61,8 @@ export default function Snack() {
             move the snacks, this simple array is first updated accordingly. Then, a separate module reads the 
             6x6 array and outputs a 16 x 16 px sprite corresponding to each ID to the VGA.</p>
 
-            <br/><br/><p>This level of abstraction meant we didn't need to worry about the complexity of the sprites when 
-            designing an initial setup for a level, or when updating the gameboard with the player's movements. 
+            <br/><br/><p>This level of abstraction meant we didn&apos;t need to worry about the complexity of the sprites when 
+            designing an initial setup for a level, or when updating the gameboard with the player&apos;s movements. 
             Additionally, it meant a new level of the same difficulty could easily be implemented by simply 
             switching the 6 x 6 array to a different one that represents the initial setup of a new level. 
             The difficulty can be increased by using a larger initial array such as a 7x7 or 8x8 array, 
