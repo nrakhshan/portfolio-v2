@@ -30,7 +30,7 @@ export default function Beacon() {
   const photos = ["photos/1.png", "/photos/2.png", "photos/3.png", "photos/4.png"];
 
   return (
-    <div className="bg-base custom-cursor">
+    <div className={`${outfit.variable} ${urbanist.variable} ${lexend.variable} bg-base custom-cursor`}>
       <PCNavBar/>
       <MobileNavBar/>
 

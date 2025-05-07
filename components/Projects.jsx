@@ -31,7 +31,7 @@ const Projects = (props) => {
 
       <ProjectCard title="Fall Fugitive" date="2024" sub="FPGA Game" 
       desc="An FPGA car-chasing game written in C"
-      photo="/photos/fall.png"
+      photo="/photos/fugitive.png"
       position="left"
       adjustments="w-[100%] h-auto overflow-hidden m-auto p-5 pt-30 scale-150 -translate-x-25"
       link="./fall"/>

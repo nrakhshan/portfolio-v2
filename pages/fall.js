@@ -28,7 +28,7 @@ export default function Beacon() {
   const photos = ["photos/title.png", "photos/car.png", "/photos/gameover.png", "photos/win.png"];
 
   return (
-    <div className="bg-base custom-cursor">
+    <div className={`${outfit.variable} ${urbanist.variable} ${lexend.variable} bg-base custom-cursor`}>
       <PCNavBar/>
       <MobileNavBar/>
 
@@ -36,7 +36,7 @@ export default function Beacon() {
         <div className='font-outfit font-normal ml-auto text-right text-lg py-15 px-10 lg:px-30'>
             <DateTime/>
         </div>
-        <Header photo="/photos/fall.png" title="Fall Fugitive"/>
+        <Header photo="/photos/fugitive.png" title="Fall Fugitive"/>
         <div className="flex justify-evenly">
           <Tags tags={tags}/>
           

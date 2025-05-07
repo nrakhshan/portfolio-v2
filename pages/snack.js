@@ -28,7 +28,7 @@ export default function Snack() {
   const photos = ["photos/map.png", "/photos/location.png", "photos/night.png"];
 
   return (
-    <div className="bg-base custom-cursor">
+    <div className={`${outfit.variable} ${urbanist.variable} ${lexend.variable} bg-base custom-cursor`}>
       <PCNavBar/>
       <MobileNavBar/>
 
