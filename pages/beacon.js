@@ -7,6 +7,7 @@ import MobileNavBar from "../components/MobileNavBar";
 import Header from "../components/Header";
 import Tags from "../components/Tags";
 import Body from "../components/Body";
+import Footer from "../components/Footer";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -28,17 +29,16 @@ export default function Beacon() {
   const photos = ["photos/map.png", "/photos/location.png", "photos/night.png"];
 
   return (
-    <div className={`${outfit.variable} ${urbanist.variable} ${lexend.variable} bg-base custom-cursor`}>
+    <div className={`${outfit.variable} ${urbanist.variable} ${lexend.variable} overflow-hidden bg-base custom-cursor`}>
       <PCNavBar/>
       <MobileNavBar/>
 
       <div className="flex flex-col justify-evenly">
-        <div className='font-outfit font-normal ml-auto text-right text-lg py-15 px-10 lg:px-30'>
+        <div className='hidden md:block font-outfit font-normal ml-auto text-right text-lg py-15 px-10 lg:px-30'>
             <DateTime/>
         </div>
         <Header photo="/photos/mockup.png" title="Bidesh Beacon"/>
-        <div className="flex justify-evenly">
-          <Tags tags={tags}/>
+        <div className="flex justify-between align-center">
           
           <Body
           parent="beacon" 
@@ -81,9 +81,11 @@ export default function Beacon() {
 
           <br/><br/><p>Although the product has room for improvement, I believe what we achieved in the time 
           frame we were given shows our passion and commitment towards our mission and our community.</p></div>}/>
+
+          <Tags tags={tags}/>
         </div>
       </div>
-      
+      <Footer/>
     </div>
   );
 }

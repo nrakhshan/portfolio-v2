@@ -7,6 +7,7 @@ import MobileNavBar from "../components/MobileNavBar";
 import Header from "../components/Header";
 import Tags from "../components/Tags";
 import Body from "../components/Body";
+import Footer from "../components/Footer";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -25,21 +26,19 @@ const urbanist = Urbanist({
 
 export default function Snack() {
   const tags = ["Verilog", "Quartus Prime", "DE1-SoC", "ModelSim", "Finite State Machine", "Datapath", "VGA"];
-  const photos = ["photos/map.png", "/photos/location.png", "photos/night.png"];
+  const photos = ["photos/board.png", "/photos/snacktime.png"];
 
   return (
-    <div className={`${outfit.variable} ${urbanist.variable} ${lexend.variable} bg-base custom-cursor`}>
+    <div className={`${outfit.variable} ${urbanist.variable} ${lexend.variable} overflow-hidden bg-base custom-cursor`}>
       <PCNavBar/>
       <MobileNavBar/>
 
       <div className="flex flex-col justify-evenly">
-        <div className='font-outfit font-normal ml-auto text-right text-lg py-15 px-10 lg:px-30'>
+        <div className='hidden md:block font-outfit font-normal ml-auto text-right text-lg py-15 px-10 lg:px-30'>
             <DateTime/>
         </div>
         <Header photo="/photos/snackimg.png" title="Snacktime Slider"/>
         <div className="flex justify-evenly">
-            <Tags tags={tags}/>
-          
             <Body
             parent="snack"
 
@@ -76,9 +75,10 @@ export default function Snack() {
             <br/><br/><p> Overall, this project was a valuable experience for learning the methods and challenges in 
             designing FPGA architecture, and working with the various constraints one might encounter 
             in hardware design.</p></div>}/>
+            <Tags tags={tags}/>
         </div>
       </div>
-      
+      <Footer/>
     </div>
   );
 }

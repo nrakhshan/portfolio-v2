@@ -7,6 +7,7 @@ import MobileNavBar from "../components/MobileNavBar";
 import Header from "../components/Header";
 import Tags from "../components/Tags";
 import Body from "../components/Body";
+import Footer from "../components/Footer";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -28,18 +29,17 @@ export default function Beacon() {
   const photos = ["photos/title.png", "photos/car.png", "/photos/gameover.png", "photos/win.png"];
 
   return (
-    <div className={`${outfit.variable} ${urbanist.variable} ${lexend.variable} bg-base custom-cursor`}>
+    <div className={`${outfit.variable} ${urbanist.variable} ${lexend.variable} overflow-hidden bg-base custom-cursor`}>
       <PCNavBar/>
       <MobileNavBar/>
 
       <div className="flex flex-col justify-evenly">
-        <div className='font-outfit font-normal ml-auto text-right text-lg py-15 px-10 lg:px-30'>
+        <div className='hidden md:block font-outfit font-normal ml-auto text-right text-lg py-15 px-10 lg:px-30'>
             <DateTime/>
         </div>
         <Header photo="/photos/fugitive.png" title="Fall Fugitive"/>
         <div className="flex justify-evenly">
-          <Tags tags={tags}/>
-          
+                 
           <Body
           parent="beacon"
 
@@ -62,9 +62,10 @@ export default function Beacon() {
 
           <br/><br/><p>It took a lot of debugging and rewriting to finally get it right, but in the process I gained a much 
           deeper understanding of how the processor really worked.</p></div>}/>
+          <Tags tags={tags}/>
         </div>
       </div>
-      
+      <Footer/>
     </div>
   );
 }

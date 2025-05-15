@@ -9,6 +9,7 @@ import Tags from "../components/Tags";
 import Body from "../components/Body";
 
 import Link from 'next/link'
+import Footer from "../components/Footer";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -30,18 +31,16 @@ export default function Beacon() {
   const photos = ["photos/1.png", "/photos/2.png", "photos/3.png", "photos/4.png"];
 
   return (
-    <div className={`${outfit.variable} ${urbanist.variable} ${lexend.variable} bg-base custom-cursor`}>
+    <div className={`${outfit.variable} ${urbanist.variable} ${lexend.variable} overflow-hidden bg-base custom-cursor`}>
       <PCNavBar/>
       <MobileNavBar/>
 
       <div className="flex flex-col justify-evenly">
-        <div className='font-outfit font-normal ml-auto text-right text-lg py-15 px-10 lg:px-30'>
+        <div className='hidden md:block font-outfit font-normal ml-auto text-right text-lg py-15 px-10 lg:px-30'>
             <DateTime/>
         </div>
         <Header photo="/photos/ggdc.png" title="LegaSeed"/>
         <div className="flex justify-evenly">
-          <Tags tags={tags}/>
-          
           <Body
           parent="beacon"
 
@@ -76,9 +75,10 @@ export default function Beacon() {
 
           <br/><br/><p>The game is available for download at   
           <Link href='https://rupalico.itch.io/legaseed' className="text-blue-500"> https://rupalico.itch.io/legaseed.</Link></p></div>}/>
+          <Tags tags={tags}/>
         </div>
       </div>
-      
+      <Footer/>
     </div>
   );
 }

@@ -13,7 +13,7 @@ const DateTime = () => {
     }, []);
 
   return (
-    <div className='text-gray-sub'>
+    <div className='text-gray-sub hidden xl:block'>
       {` ${dateTime.toLocaleDateString('en-CA', {month: "long", day: "numeric", year: "numeric"})} ${dateTime.toLocaleTimeString('en-US', {hour: "2-digit", minute: "2-digit"})}`}
     </div>
   )

@@ -63,11 +63,11 @@ const MobileNavBar = () => {
           <Link href='/' className={LogoEffect}>
           <i className="material-symbols-rounded">home</i></Link>
 
-          <Link href='#about' className={LogoEffect}>
-          <i className="material-symbols-rounded">person</i></Link>
+          {/* <Link href='#about' className={LogoEffect}>
+          <i className="material-symbols-rounded">person</i></Link> */}
 
-          <Link href='/#skills' className={LogoEffect}>
-          <i className="material-symbols-rounded">build</i></Link>
+          {/* <Link href='/#skills' className={LogoEffect}>
+          <i className="material-symbols-rounded">build</i></Link> */}
 
           <Link href='/#projects' className={LogoEffect}>
           <i className="material-symbols-rounded">code</i></Link>
@@ -91,7 +91,7 @@ const MobileNavBar = () => {
           <Link href='https://devpost.com/nusaibarakhshan' className={LogoEffect}>
           <img src="/icons/devpost.svg" alt="Devpost Icon" className='w-auto h-auto'/></Link>
 
-          <Link href='mailto:nusaiba.rakhshan@mail.utoronto.ca' className={LogoEffect}>
+          <Link href='mailto:nusaiba.rakhshan@mail.utoronto.ca' className={`-translate-y-[2px] ${LogoEffect}`}>
           <i className="material-symbols-rounded pt-1">mail</i></Link>
         </div>
 

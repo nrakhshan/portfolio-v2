@@ -5,11 +5,11 @@ const PCNavBar = () => {
   let MenuEffect = 'transition-all duration-300 ease-in-out hover:font-semibold hover:px-1'
   let LinkEffect = 'transition-all duration-300 ease-in-out hover:text-gray-sub hover:font-light hover:px-1'
   return (
-    <div className='hidden xl:block fixed z-50 bg-menu backdrop-blur-md bg-base/50 blur-feather p-5 pb-10 pr-10'>
+    <div className='hidden xl:block fixed z-50 bg-menu backdrop-blur-md bg-base/50 blur-feather p-5 pb-10 pr-0'>
         <nav className='hidden xl:flex flex-col justify-start py-5 px-10 pt-15 gap-2 text-2xl font-outfit font-normal'>
           <Link href='/' className={MenuEffect}>Home</Link>
-          <Link href='/#about' className={MenuEffect}>About</Link>
-          <Link href='/#skills' className={MenuEffect}>Skills</Link>
+          {/* <Link href='/#about' className={MenuEffect}>About</Link> */}
+          {/* <Link href='/#skills' className={MenuEffect}>Skills</Link> */}
           <Link href='/#projects' className={MenuEffect}>Projects</Link>
         </nav>
 
